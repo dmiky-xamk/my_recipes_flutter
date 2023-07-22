@@ -1,0 +1,56 @@
+name: my_recipes
+description: A new Flutter project.
+
+# Prevent accidental publishing to pub.dev.
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.19.3 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  go_router: ^6.2.0
+  select2dot1: ^1.0.2
+  flutter_riverpod: ^2.3.1
+  collection: ^1.17.0
+  path_provider: ^2.0.14
+  sembast: ^3.4.3+1
+  animations: ^2.0.7
+  http: ^0.13.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Enable generation of localized Strings from arb files.
+  generate: true
+
+  fonts:
+    - family: Lato
+      fonts:
+        - asset: assets/fonts/Lato-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Lato-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Lato-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Lato-Semibold.ttf
+          weight: 600
+        - asset: assets/fonts/Lato-Bold.ttf
+          weight: 700
+
+  assets:
+    # Add assets from the images directory to the application.
+    - assets/images/
